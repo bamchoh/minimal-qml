@@ -2,6 +2,7 @@
 
 TimeUpdater::TimeUpdater(QObject *parent) : QObject(parent) {
     connect(&timer, &QTimer::timeout, this, &TimeUpdater::updateTime);
+    updateTime(); // 初回の時間を取得
     timer.start(1000); // 1秒ごとに更新
 }
 

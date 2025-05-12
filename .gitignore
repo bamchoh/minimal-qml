@@ -58,3 +58,5 @@ qrc_*.cpp
 Thumbs.db
 .idea/
 .vscode/
+
+minimal-qml

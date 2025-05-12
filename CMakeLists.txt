@@ -46,6 +46,7 @@ target_link_libraries(minimal-qml PUBLIC
 # Resources:
 set(minimal-qml_resource_files
     "main.qml"
+    "bgimage.jpeg"
 )
 
 qt6_add_resources(minimal-qml "minimal-qml"

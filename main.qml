@@ -7,8 +7,6 @@ import QtWayland.Compositor
 import QtWayland.Compositor.XdgShell
 import QtWayland.Compositor.WlShell
 import QtWayland.Compositor.IviApplication
-import QtQuick 2.15
-import QtQuick.Controls 2.15
 
 //! [compositor]
 WaylandCompositor {
@@ -23,6 +21,19 @@ WaylandCompositor {
             width: 1024
             height: 768
             visible: true
+            flags: Qt.FramelessWindowHint // Remove the window title bar
+
+            // Set a background image with 60% opacity
+            Rectangle {
+                anchors.fill: parent
+                opacity: 0.6
+                border.width: 0
+                Image {
+                    source: "qrc:/bgimage.jpeg"
+                    anchors.fill: parent
+                    fillMode: Image.PreserveAspectCrop
+                }
+            }
 
             // Add a Text element to display the current time
             Text {
