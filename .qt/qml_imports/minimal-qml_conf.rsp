@@ -1,0 +1,11 @@
+-rootPath
+/home/bamchoh/myqtproj/minimal-qml
+-cmake-output
+-output-file
+/home/bamchoh/myqtproj/minimal-qml/.qt/qml_imports/minimal-qml_conf.cmake
+-importPath
+/home/bamchoh/myqtproj/minimal-qml
+-importPath
+/home/bamchoh/qt-raspi/qml
+-qrcFiles
+/home/bamchoh/myqtproj/minimal-qml/.qt/rcc/minimal-qml.qrc
